@@ -48,7 +48,7 @@ churn-prediction-challenge/
 |-- Dockerfile                  # Receita para criar o ambiente em um container
 |-- Makefile                    # Comandos para automatizar o pipeline (make train, etc.)
 |-- README.md                   # Documentação principal (este arquivo)
-|-- requirements.txt            # Lista de dependências Python
+|-- requirements.txt            # Lista de dependências Python```
 
 🚀 Instalação e Execução
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
