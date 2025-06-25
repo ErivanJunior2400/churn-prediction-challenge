@@ -13,26 +13,42 @@ Este projeto consiste em uma solução de ponta a ponta para o problema de rotat
 
 O trabalho abrange desde a limpeza e análise exploratória dos dados até o treinamento, comparação de modelos, interpretação de resultados e a criação de um pipeline automatizado, visando entregar uma solução robusta, reprodutível e com insights acionáveis para a área de negócios.
 
-📂 Estrutura de Pastas
+## 📂 Estrutura de Pastas
+
 O repositório está organizado da seguinte forma para garantir clareza, modularidade e reprodutibilidade:
 
+```text
 churn-prediction-challenge/
-│
-├── data/               # Contém os dados brutos, processados e de saída.
-│   ├── 01_raw/         # Dados originais do desafio, imutáveis.
-│   └── 02_processed/   # Dados intermediários após limpeza e pré-processamento.
-│
-├── notebooks/          # Jupyter Notebooks para exploração e apresentação dos resultados.
-├── src/                # Scripts Python (.py) com o código fonte modularizado.
-│   ├── __init__.py     # Transforma 'src' em um pacote Python.
-│   └── (outros scripts como data_processing.py, model_training.py...)
-│
-├── tests/              # Testes automatizados para garantir a qualidade do código.
-│   └── test_data_processing.py
-│
-├── .gitignore          # Arquivos e pastas a serem ignorados pelo Git (ex: venv/).
-├── README.md           # Esta documentação.
-└── requirements.txt    # Lista de dependências Python para o projeto.
+|
+|-- .github/workflows/
+|   |-- pipeline.yml            # Define a pipeline de automação (CI/CD)
+|
+|-- data/
+|   |-- 01_raw/                 # Dados originais e imutáveis
+|   |-- 02_processed/           # Dados intermediários após limpeza
+|   |-- 03_output/              # Arquivos finais gerados (ex: previsões)
+|
+|-- notebooks/
+|   |-- 01_EDA.ipynb            # Notebook para Análise Exploratória de Dados
+|   |-- 02_Modeling.ipynb       # Notebook para experimentação e comparação de modelos
+|
+|-- reports/
+|   |-- Decision_Log.md         # Log com justificativas das decisões técnicas
+|
+|-- src/
+|   |-- data_preprocessing.py   # Script para pré-processamento dos dados
+|   |-- train_model.py          # Script para treinamento do modelo
+|   |-- evaluate_model.py       # Script para avaliação do modelo
+|
+|-- tests/
+|   |-- __init__.py
+|   |-- test_data_processing.py # Testes para o pré-processamento
+|
+|-- .gitignore                  # Arquivos e pastas ignorados pelo Git
+|-- Dockerfile                  # Receita para criar o ambiente em um container
+|-- Makefile                    # Comandos para automatizar o pipeline (make train, etc.)
+|-- README.md                   # Documentação principal (este arquivo)
+|-- requirements.txt            # Lista de dependências Python
 
 🚀 Instalação e Execução
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
@@ -56,7 +72,7 @@ Crie e ative um ambiente virtual:
 # Ativa o ambiente no Windows
 `.\venv\Scripts\activate`
 # (Alternativa para macOS/Linux)
-# source venv/bin/activate
+`source venv/bin/activate`
 
 Instale as dependências:
 
