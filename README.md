@@ -20,9 +20,6 @@ O repositório está organizado da seguinte forma para garantir clareza, modular
 ```text
 churn-prediction-challenge/
 |
-|-- .github/workflows/
-|   |-- pipeline.yml            # Define a pipeline de automação (CI/CD)
-|
 |-- data/
 |   |-- 01_raw/                 # Dados originais e imutáveis
 |   |-- 02_processed/           # Dados intermediários após limpeza
@@ -32,23 +29,27 @@ churn-prediction-challenge/
 |   |-- 01_EDA.ipynb            # Notebook para Análise Exploratória de Dados
 |   |-- 02_Modeling.ipynb       # Notebook para experimentação e comparação de modelos
 |
-|-- reports/
-|   |-- Decision_Log.md         # Log com justificativas das decisões técnicas
-|
 |-- src/
 |   |-- data_preprocessing.py   # Script para pré-processamento dos dados
 |   |-- train_model.py          # Script para treinamento do modelo
 |   |-- evaluate_model.py       # Script para avaliação do modelo
 |
+|-- reports/
+|   |-- Decision_Log.md         # Log com justificativas das decisões técnicas
+|
 |-- tests/
 |   |-- __init__.py
 |   |-- test_data_processing.py # Testes para o pré-processamento
+|
+|-- .github/workflows/
+|   |-- pipeline.yml            # Define a pipeline de automação (CI/CD)
 |
 |-- .gitignore                  # Arquivos e pastas ignorados pelo Git
 |-- Dockerfile                  # Receita para criar o ambiente em um container
 |-- Makefile                    # Comandos para automatizar o pipeline (make train, etc.)
 |-- README.md                   # Documentação principal (este arquivo)
-|-- requirements.txt            # Lista de dependências Python```
+|-- requirements.txt            # Lista de dependências Python
+```
 
 🚀 Instalação e Execução
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
