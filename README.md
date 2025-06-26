@@ -149,7 +149,7 @@ Outros Fatores: Ter dependentes (Dependents) e o tipo de serviço de internet ta
 
 Um entusiasta de dados e Machine Learning com experiência prática em competições de modelagem preditiva e construção de pipelines de dados. 
 
-* **🥈 Medalhista de Prata do Kaggle** - Veja meu perfil [aqui](https://www.kaggle.com/seu-usuario).
+* **🥈 Medalhista de Prata do Kaggle** - Veja meu perfil [aqui](https://www.kaggle.com/erivanoliveirajr).
 * **LinkedIn:** [linkedin.com/in/erivan-oliveira-365027185](https://www.linkedin.com/in/erivan-oliveira-365027185)
 ![Conquistas no Kaggle](images/kaggle.png)
 
