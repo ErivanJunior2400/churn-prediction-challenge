@@ -39,10 +39,6 @@ churn-prediction-challenge/
 |-- reports/
 |   |-- Decision_Log.md         # Log com justificativas das decisões técnicas
 |
-|-- tests/
-|   |-- __init__.py
-|   |-- test_data_processing.py # Testes para o pré-processamento
-|
 |-- .github/workflows/
 |   |-- pipeline.yml            # Define a pipeline de automação (CI/CD)
 |
@@ -143,3 +139,18 @@ Principal Fator de Retenção: A duração do contrato (Contract) é o atributo 
 Principal Fator de Churn: O método de pagamento 'Cheque Eletrônico' está fortemente associado a uma maior probabilidade de churn. Este grupo de clientes representa um alto risco e deve ser o principal alvo de campanhas de retenção.
 Lealdade: Clientes com maior tempo de contrato (tenure) e maior gasto total (TotalCharges) são mais propensos a permanecer.
 Outros Fatores: Ter dependentes (Dependents) e o tipo de serviço de internet também influenciam o churn, embora com menor peso.
+
+
+---
+
+### Sobre o Autor
+
+**[Erivan José de Oliveira Júnior]**
+
+Um entusiasta de dados e Machine Learning com experiência prática em competições de modelagem preditiva e construção de pipelines de dados. 
+
+* **🥈 Medalhista de Prata do Kaggle** - Veja meu perfil [aqui](https://www.kaggle.com/seu-usuario).
+* **LinkedIn:** [linkedin.com/in/erivan-oliveira-365027185](https://www.linkedin.com/in/erivan-oliveira-365027185)
+![Conquistas no Kaggle](images/kaggle.png)
+
+---
