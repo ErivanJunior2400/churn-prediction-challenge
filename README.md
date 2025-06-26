@@ -111,7 +111,7 @@ Nota sobre Badges: Os badges de Build e Cobertura de Testes no topo deste README
 
 
 Relatório do Projeto Telco Customer Churn
-1. Principais Decisões de Pré-processamento
+# 1. Principais Decisões de Pré-processamento
 Nesta etapa, o objetivo foi transformar os dados brutos em um formato adequado para a modelagem, garantindo a qualidade e o poder preditivo das features.
 
 Limpeza e Tratamento de Nulos: As colunas MonthlyCharges e TotalCharges foram convertidas para o tipo numérico. Valores ausentes em TotalCharges (presentes para clientes novos com tenure zero) foram preenchidos com a mediana da coluna para evitar a perda de dados.
@@ -122,19 +122,22 @@ Normalização de Atributos Numéricos:
 tenure e MonthlyCharges foram escalados para um intervalo de 0 a 1 usando o MinMaxScaler, tornando-os comparáveis entre si.
 TotalCharges, que apresentava uma forte assimetria, foi transformado com o método Yeo-Johnson para torná-lo mais próximo de uma distribuição normal. Em seguida, foi padronizado com o StandardScaler. Essa abordagem em duas etapas melhora o desempenho de modelos lineares.
 Variável Alvo: A coluna Churn foi mapeada para 1 (Yes) e 0 (No), facilitando o treinamento do modelo de classificação.
-2. Escolha de Algoritmo e Otimização
+
+# 2. Escolha de Algoritmo e Otimização
 Para estabelecer uma linha de base, a Regressão Logística foi escolhida devido à sua simplicidade, interpretabilidade e eficiência para problemas de classificação binária.
 
 Ajuste para Dados Desbalanceados: O parâmetro class_weight='balanced' foi crucial para lidar com o desbalanceamento da variável Churn (65% 'No' vs. 35% 'Yes'). Este ajuste fez o modelo focar na classe minoritária ('Yes'), que é a que o negócio quer prever.
 Otimização de Hiperparâmetros: Uma busca em grade (GridSearchCV) foi realizada para encontrar a melhor combinação de hiperparâmetros para o modelo, otimizando o Recall da classe 'Yes'.
 Melhores Parâmetros Encontrados: {'C': 0.0886, 'penalty': 'l1'}.
-3. Métricas Alcançadas
+
+# 3. Métricas Alcançadas
 As métricas foram avaliadas no conjunto de teste, que o modelo nunca viu, para garantir que os resultados fossem realistas.
 
 Recall (Foco Principal): 0.7717 (ou 77.17%). Este é o resultado mais importante para o negócio. Significa que o modelo é capaz de identificar corretamente mais de 77% dos clientes que realmente irão cancelar o serviço.
 AUC-ROC: 0.6194. Uma pontuação de AUC acima de 0.5 indica que o modelo tem poder preditivo e consegue distinguir entre as classes, embora ainda haja espaço para melhorias com outros algoritmos.
 Outras Métricas (no conjunto de teste): Acurácia (0.55), Precision (0.42), F1-Score (0.54). O Recall é notavelmente maior que a Precision, o que é esperado devido ao ajuste de class_weight, refletindo a prioridade de encontrar churners.
-4. Insights de Negócio
+
+# 4. Insights de Negócio
 A interpretação do modelo revelou os principais fatores que influenciam o churn, fornecendo insights acionáveis para o negócio.
 
 Principal Fator de Retenção: A duração do contrato (Contract) é o atributo mais forte para a lealdade do cliente. Clientes com contratos de 1 ou 2 anos têm uma probabilidade muito menor de churn, o que sugere a importância de programas de fidelidade ou incentivos para contratos mais longos.
