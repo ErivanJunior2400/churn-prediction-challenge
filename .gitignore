@@ -1,1 +1,15 @@
+# Ambientes Virtuais
 venv/
+*.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Arquivos de IDEs e de sistema operacional
+.vscode/
+.idea/
+*.DS_Store

@@ -1,21 +1,21 @@
 Atributo,Coeficiente
-Contract,-0.5487575112228994
-PaymentMethod_Electronic check,0.43211250971215076
-PaperlessBilling,0.07822616707027451
-Dependents,0.046750888390227494
-gender,0.035942484001370845
-OnlineSecurity_Yes,0.03451195921643801
-Partner,0.0281887347580306
-StreamingMovies_No,0.027997559150904107
-TotalCharges_padronizado,-0.02197502912866877
-OnlineSecurity_No internet service,-0.020417460445224193
-PaymentMethod_Bank transfer (automatic),0.019991688166812894
-TechSupport_No,0.016668168860867423
-DeviceProtection_Yes,0.007687368321865739
-OnlineSecurity_No,0.0030335545042602333
+Contract,-0.5489530264449626
+PaymentMethod_Electronic check,0.43295238462992897
+PaperlessBilling,0.07844537622028293
+Dependents,0.04712707869577195
+OnlineSecurity_Yes,0.04513923036596569
+gender,0.0363432241961925
+Partner,0.029197615585786985
+StreamingMovies_No,0.028549581075169556
+PaymentMethod_Bank transfer (automatic),0.020365891136365492
+TechSupport_No,0.01678173137888522
+OnlineSecurity_No,0.01390163324492189
+OnlineSecurity_No internet service,-0.010599273366176975
+TotalCharges_padronizado,0.009037282975885748
+DeviceProtection_Yes,0.006680940702792042
+MonthlyCharges_escalado,0.0
 PaymentMethod_Mailed check,0.0
 PaymentMethod_Credit card (automatic),0.0
-MonthlyCharges_escalado,0.0
 InternetService_No,0.0
 InternetService_Fiber optic,0.0
 InternetService_DSL,0.0
