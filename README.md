@@ -50,7 +50,6 @@ churn-prediction-challenge/
 |-- images                      # imagens do projeto
 |-- models                      # Modelos treinados e artefatos serializados 
 |-- Dockerfile                  # Receita para criar o ambiente em um container
-|-- Makefile                    # Comandos para automatizar o pipeline (make train, etc.)
 |-- README.md                   # Documentação principal (este arquivo)
 |-- requirements.txt            # Lista de dependências Python
 ```
